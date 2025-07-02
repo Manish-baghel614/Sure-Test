@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  
+        <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="img/logo 1.png" alt="Logo" class="navbar-logo me-2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Why us">Why Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#services">Services</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Process">Process</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"  href="#Technologies">Technologies</a>
+                    </li>
+
+                </ul>
+
+                <button onclick="showContactModal()" class="btn btn-outline-success me-2">Contact Us</button>
+            
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="display-4">QA Automation </h1>
+            <p class="lead">Boost quality and speed with our expert testing solutions.</p>
+            <button onclick="showTrialModal()" class="btn btn-primary btn-lg">Try for Free</button>
+        </div>
+    </section>
+
+
+
+    <!-- Features Section -->
+    <section class="py-5" id="services">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Comprehensive Test Automation Services</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">Our expertise spans across all major
+                    automation frameworks and technologies to deliver robust test solutions.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">CI/CD Integration</h5>
+                            <p class="card-text">Seamless integration with Jenkins, Azure DevOps, and GitHub Actions for
+                                continuous testing pipelines.</p>
+                            <div class="mt-3">
+                                <span class="technology-badge">Jenkins</span>
+                                <span class="technology-badge">GitHub Actions</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Functional Testing</h5>
+                            <p class="card-text">Comprehensive automation for iOS and Android apps using Appium,
+                                XCUITest, and Espresso frameworks.</p>
+                            <div class="mt-3">
+                                <span class="technology-badge">Java</span>
+                                <span class="technology-badge">Selenium</span>
+                                <span class="technology-badge">Playwright</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Web Testing</h5>
+                            <p class="card-text">Cross-browser automation using Selenium, Playwright, and Cypress for
+                                pixel-perfect web applications.</p>
+                            <div class="mt-3">
+                                <span class="technology-badge">Selenium</span>
+                                <span class="technology-badge">Playwright</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">API Testing</h5>
+                            <p class="card-text">Automated REST and GraphQL API testing with Postman, RestAssured, and
+                                Karate frameworks.</p>
+                            <div class="mt-3">
+                                <span class="technology-badge">Postman</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">AI-Powered Testing</h5>
+                            <p class="card-text">Intelligent test generation and self-healing automation using machine
+                                learning algorithms.</p>
+                            <div class="mt-3">
+                                <span class="technology-badge">Testim</span>
+                                <span class="technology-badge">Mabl</span>
+                                <span class="technology-badge">Functionize</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Performance Testing</h5>
+                            <p class="card-text">Load and stress testing with JMeter, Gatling, and k6 to ensure
+                                application scalability.</p>
+                            <div class="mt-3">
+                                <span class="technology-badge">JMeter</span>
+                                <span class="technology-badge">Gatling</span>
+                                <span class="technology-badge">k6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Test Automation Process-->
+    <section class="py-5" id="Process">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Our Test Automation Process</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">A comprehensive visual representation of
+                    our end-to-end automation workflow</p>
+            </div>
+
+            <div class="process-timeline">
+                <!-- Step 1 -->
+                <div class="process-step left">
+                    <div class="process-content">
+                        <h4 class="fw-bold">1. Requirements Analysis</h4>
+                        <p>Understanding application functionality, testing goals, and automation feasibility</p>
+                        <div class="sub-steps">
+                            <div class="sub-step">Conduct stakeholder interviews</div>
+                            <div class="sub-step">Analyze existing test cases</div>
+                            <div class="sub-step">Identify automation candidates</div>
+                        </div>
+                        <div class="tech-stack mt-3">
+                            <span class="fw-bold">Deliverables:</span>
+                            <span class="tech-badge">Test Plan</span>
+                            <span class="tech-badge">ROI Analysis</span>
+                            <span class="tech-badge">Automation Blueprint</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step right">
+                    <div class="process-content">
+                        <h4 class="fw-bold">2. Framework Design</h4>
+                        <p>Creating modular, maintainable architecture tailored to application needs</p>
+                        <div class="sub-steps">
+                            <div class="sub-step">Select appropriate tools & technologies</div>
+                            <div class="sub-step">Design reporting structure</div>
+                            <div class="sub-step">Implement CI/CD integration points</div>
+                        </div>
+                        <div class="tech-stack mt-3">
+                            <span class="fw-bold">Tool Selection:</span>
+                            <span class="tech-badge">Selenium</span>
+                            <span class="tech-badge">TestNG</span>
+                            <span class="tech-badge">Cucumber</span>
+                            <span class="tech-badge">Jenkins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step left">
+                    <div class="process-content">
+                        <h4 class="fw-bold">3. Test Implementation</h4>
+                        <p>Developing robust, maintainable automation scripts with comprehensive coverage</p>
+                        <div class="sub-steps">
+                            <div class="sub-step">Create base page objects</div>
+                            <div class="sub-step">Implement test cases</div>
+                            <div class="sub-step">Add validation points</div>
+                            <div class="sub-step">Integrate test data management</div>
+                        </div>
+                        <div class="tech-stack mt-3">
+                            <span class="fw-bold">Implementation:</span>
+                            <span class="tech-badge">Page Object Model</span>
+                            <span class="tech-badge">Data-Driven Tests</span>
+                            <span class="tech-badge">Parallel Execution</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-step right">
+                    <div class="process-content">
+                        <h4 class="fw-bold">4. CI/CD Integration</h4>
+                        <p>Establishing automated testing pipelines within the development workflow</p>
+                        <div class="sub-steps">
+                            <div class="sub-step">Configure execution triggers</div>
+                            <div class="sub-step">Set up reporting dashboards</div>
+                            <div class="sub-step">Implement notification systems</div>
+                            <div class="sub-step">Configure artifact management</div>
+                        </div>
+                        <div class="tech-stack mt-3">
+                            <span class="fw-bold">Integration Points:</span>
+                            <span class="tech-badge">Jenkins</span>
+                            <span class="tech-badge">Azure DevOps</span>
+                            <span class="tech-badge">GitHub Actions</span>
+                            <span class="tech-badge">Slack/Teams</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="process-step left">
+                    <div class="process-content">
+                        <h4 class="fw-bold">5. Maintenance & Optimization</h4>
+                        <p>Ongoing support to ensure framework evolves with the application</p>
+                        <div class="sub-steps">
+                            <div class="sub-step">Regular script reviews</div>
+                            <div class="sub-step">Flakiness analysis</div>
+                            <div class="sub-step">Performance tuning</div>
+                            <div class="sub-step">Framework updates</div>
+                        </div>
+                        <div class="tech-stack mt-3">
+                            <span class="fw-bold">Optimization:</span>
+                            <span class="tech-badge">Self-healing tests</span>
+                            <span class="tech-badge">AI Analysis</span>
+                            <span class="tech-badge">Execution Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- why us Section -->
+            <section class="py-5 bg-white" id="Why us">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold">Why Choose Our Test Automation Platform</h2>
+                        <p class="lead text-muted">Powerful features to streamline your testing workflow</p>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100 p-4">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <h3>Fast Test Execution</h3>
+                                <p class="text-muted">Run tests 10x faster than manual testing with our parallel
+                                    execution engine.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 p-4">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3>Real-time Analytics</h3>
+                                <p class="text-muted">Get actionable insights with detailed test reports and dashboards.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 p-4">
+                                <div class="feature-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h3>Cross-browser Testing</h3>
+                                <p class="text-muted">Test across 2000+ browser and device combinations.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 p-4">
+                                <div class="feature-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <h3>Self-healing Tests</h3>
+                                <p class="text-muted">AI-powered technology reduces maintenance by auto-correcting
+                                    element locators.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 p-4">
+                                <div class="feature-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3>Team Collaboration</h3>
+                                <p class="text-muted">Share test results, assign tasks, and track progress with your
+                                    team.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technologies Section -->
+            <section id="Technologies">
+                <div class="py-5 bg-light">
+                    <div class="container">
+                        <div class="text-center mb-4">
+                            <h2 class="display-4 font-weight-bold text-dark mb-4">Our <span
+                                    class="text-primary">Technology</span> Stack</h2>
+                            <p class="lead text-muted">Cutting-edge tools and frameworks for all your testing needs</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                                <div class="card text-center feature-card">
+                                    <img src="img/Selenium.png" alt="Selenium WebDriver logo"
+                                        class="card-img-top mx-auto" style="width: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Selenium</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                                <div class="card text-center feature-card">
+                                    <img src="img/Jenkins.jpg" alt="Cypress.io logo" class="card-img-top mx-auto"
+                                        style="width: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jenkins</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                                <div class="card text-center feature-card">
+                                    <img src="img/TestNg.png" alt="Appium logo" class="card-img-top mx-auto"
+                                        style="width: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">TestNg</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                                <div class="card text-center feature-card">
+                                    <img src="img/Jmeter.png" alt="JMeter logo" class="card-img-top mx-auto"
+                                        style="width: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">JMeter</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                                <div class="card text-center feature-card">
+                                    <img src="img/Postman.png" alt="Postman logo" class="card-img-top mx-auto"
+                                        style="width: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Postman</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                                <div class="card text-center feature-card">
+                                    <img src="img/Playwright.png" alt="Playwright logo" class="card-img-top mx-auto"
+                                        style="width: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Playwright</h5>
+                                    </div>
+                                </div>
+                            </div>
+            </section>
+        </div>
+        </div>
+        </div>
+
+
+        <!-- Free trial form -->
+            <div id="modal" class="modal">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+
+                            <div class="form-container p-4 p-md-5">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2 class="text-center mb-4">Start Your Free Trial</h2>
+                                <form class="row g-3" action="https://formspree.io/f/xanjkwng" method="POST" >
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" name = "firstName" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" name="lastName" id="lastName" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Work Email</label>
+                                        <input type="email" class="form-control" name="Work email" id="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="company" class="form-label">Company</label>
+                                        <input type="text" class="form-control"name = "Company" id="company" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" name = "phone Number" id="phone">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="jobTitle" class="form-label">Job Title</label>
+                                        <input type="text" class="form-control" name="Job Title" id="jobTitle">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="terms">
+                                            <label class="form-check-label" for="terms">
+                                                I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy
+                                                    Policy</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-dark btn-lg w-100">Get Started Free for 14
+                                            Days</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        <!-- 📩 Modal Contact Form -->
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 class="text-center">Contact Us</h2>
+                <form class="contact-form" action="https://formspree.io/f/xanjkwng" method="POST" >
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email" name = "email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Your message" name ="message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+
+
+        <section class="p-5 text-center">
+            <h2 id="contact">Get In Touch</h2>
+            <p>Email: TestSure.com | WhatsApp: +91-9024848988</p>
+        </section>
+
+        <footer class="text-center p-3 bg-dark text-white">
+            &copy; 2025 QA Automation Services. All rights reserved.
+        </footer>
+
+
+        <script>
+            function showTrialModal() {
+                document.getElementById('modal').style.display = 'block';
+            }
+
+            function showContactModal() {
+                document.getElementById('contactModal').style.display = 'block';
+            }
+
+            function closeModal() {
+                document.getElementById('modal').style.display = 'none';
+                document.getElementById('contactModal').style.display = 'none';
+            }
+
+        </script>
+
+</body>
+
+</html>
